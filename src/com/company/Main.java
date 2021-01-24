@@ -13,40 +13,40 @@ public class Main {
         if (number < 0) {
             System.out.println("Invalid number");
         }
-        StringBuilder value = new StringBuilder();
+        String value = "";
         int reversedNumber = reverse(number);
         for (int i =0; i < getDigitCount(number); i++){
             int remainder = reversedNumber % 10;
             switch (remainder) {
                 case 0:
-                    value.append("Zero ");
+                    value += "Zero ";
                     break;
                 case 1:
-                    value.append("One ");
+                    value += "One ";
                     break;
                 case 2:
-                    value.append("Two ");
+                    value += "Two ";
                     break;
                 case 3:
-                    value.append("Three ");
+                    value += "Three ";
                     break;
                 case 4:
-                    value.append("Four ");
+                    value += "Four ";
                     break;
                 case 5:
-                    value.append("Five ");
+                    value += "Five ";
                     break;
                 case 6:
-                    value.append("Six ");
+                    value += "Six ";
                     break;
                 case 7:
-                    value.append("Seven ");
+                    value += "Seven ";
                     break;
                 case 8:
-                    value.append("Eight ");
+                    value += "Eight ";
                     break;
                 case 9:
-                    value.append("Nine ");
+                    value += "Nine ";
                     break;
             }
             reversedNumber /= 10;
